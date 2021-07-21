@@ -1,0 +1,39 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int a[10],n,key,i,flag=0;
+	cout<<"enter the n value"<<endl;
+	cin>>n;
+	cout<<"enter the array elements"<<endl;
+	for(i=0;i<n;i++)
+	{
+		cin>>a[i];
+	}
+	cout<<"enter the key value"<<endl;
+	cin>>key;
+	for(i=0;i<n;i++)
+	{
+		if(a[i]==key)
+		{
+			flag=1;
+		}
+	}
+	if(flag==1)
+	cout<<"element found";
+	else
+	cout<<"not found";
+}
+
+OUTPUT:
+
+enter the n value
+5
+enter the array elements
+56 90 43 89 24
+enter the key value
+24
+element found
+--------------------------------
+Process exited after 31.14 seconds with return value 0
+Press any key to continue
